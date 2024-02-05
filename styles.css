@@ -158,5 +158,5 @@ height:5%;
 }
 
 .buttons a:hover {
-    transform: translateY(8px);
+    transform: translateY(-4px);
 }
