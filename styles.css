@@ -13,6 +13,10 @@ html {
     scroll-behavior:smooth;
 }
 
+.spacer {
+height:5%;
+}
+
 .nav {
     background-color:darkslategrey;
     width:100%;
