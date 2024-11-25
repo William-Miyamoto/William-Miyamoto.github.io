@@ -22,7 +22,7 @@ height:5%;
 }
 
 .nav {
-    background-color:rgba(62, 62, 62, 0.7);
+    background-color:rgba(122, 122, 122, 0.9);
     width:100%;
     position:absolute;
     z-index:4;
@@ -212,7 +212,7 @@ height:5%;
     color: var(--ccol, white); /* Caret color */
     background: var(--background); /* Matches the background to hide text */
     animation: typing var(--adur, 1s) steps(var(--steps)) forwards var(--delay, 0s), /* Typing effect */
-               caret 1s infinite var(--cdel, 0s);
+               caret 1s infinite;
   }
   
   @keyframes typing {
