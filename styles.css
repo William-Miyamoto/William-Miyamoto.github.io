@@ -13,6 +13,10 @@ html {
     scroll-behavior:smooth;
 }
 
+body {
+ overflow-x: hidden;
+}
+
 .spacer {
 height:5%;
 }
@@ -56,7 +60,7 @@ height:5%;
 
 /* BEGIN WELCOME SECTON */
 
-.welcome-section {
+.welcome-banner {
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -64,16 +68,25 @@ height:5%;
     width:100%;
     height:100vh;
     background-color:lightgrey;
-    /* background-image:linear-gradient(
-        60deg,
-        #3a3d40,
-        #181719 
-    ); */
-    
+}
+
+#banner {
+    position:absolute;
+    width:100%;
+    height:75vh;
+    z-index: 1;
+    left:100%;
+    animation: slide 0.3s cubic-bezier(.61,.89,.68,.83) 4.5s forwards;
+}
+
+@keyframes slide {
+  from {left: 100%;}
+  to {left: 0%;}
 }
 
 #nameheader {
     position:relative;
+    z-index:3;
     right: 30%;
 }
 
@@ -81,8 +94,8 @@ height:5%;
     height:2%;
 }
 
-.welcome-section h1, .welcome-section h3 {
-    background: var(--background);
+.welcome-banner h1, .welcome-banner h3 {
+    
     font-size:8vh;
     color:black;
     line-height:1.8;
@@ -94,7 +107,7 @@ height:5%;
     gap: 6px;
 }
 
-.welcome-section p {
+.welcome-banner p {
     font-size:14px;
     text-align:center;
     line-height:1.5;
