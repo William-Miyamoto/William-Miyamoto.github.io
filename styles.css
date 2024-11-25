@@ -78,10 +78,15 @@ height:5%;
 
 .welcome-section h1, .welcome-section h3 {
     background: var(--background);
-    
     /* font-size:50px; */
     color:black;
     line-height:1.8;
+}
+
+#temprow {
+    display:flex;
+    flex-direction:row;
+    gap: 6px;
 }
 
 .welcome-section p {
@@ -89,6 +94,8 @@ height:5%;
     text-align:center;
     line-height:1.5;
 }
+
+/* END WELCOME SECTON */
 
 #intro {
     padding-bottom:10px;
@@ -114,7 +121,7 @@ height:5%;
 
 
 
-/* END WELCOME SECTON */
+
 
 
 .buttons {
@@ -158,9 +165,9 @@ height:5%;
   }
   
   .typing {
-    font-size: 6vw;
+    /* font-size: 6vw; */
     font-family: 'Ubuntu'; /* Monospace font for even character width */
-    color: #d7b94c;
+    /* color: #d7b94c; */
     position: relative;
     overflow: hidden; /* Ensure text is clipped during animation */
   }
@@ -172,7 +179,7 @@ height:5%;
     width: 100%; /* Start covering all text */
     color: white; /* Caret color */
     background: var(--background); /* Matches the background to hide text */
-    animation: typing 1s steps(var(--steps)) forwards, /* Typing effect */
+    animation: typing var(--adur, 1s) steps(var(--steps)) forwards var(--delay, 0s), /* Typing effect */
                caret 1s infinite; /* Blinking caret */
   }
   
