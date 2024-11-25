@@ -77,7 +77,9 @@ height:5%;
 }
 
 .welcome-section h1, .welcome-section h3 {
-    font-size:50px;
+    background: var(--background);
+    
+    /* font-size:50px; */
     color:black;
     line-height:1.8;
 }
@@ -87,17 +89,6 @@ height:5%;
     text-align:center;
     line-height:1.5;
 }
-
-.welcome-section h4, .welcome-section h5 {
-    /* text-shadow: 1px 1px 1px black;
-    font-style:italic;
-    font-size:14px;
-    color:darkslategrey;
-    padding-top:5px;
-    padding-bottom:5px;
-     */
-}
-
 
 #intro {
     padding-bottom:10px;
@@ -160,3 +151,42 @@ height:5%;
 .buttons a:hover {
     transform: translateY(-4px);
 }
+
+:root {
+    --steps: 16; /* Match the exact number of characters */
+    --background: lightgrey; /* Match the section's background */
+  }
+  
+  .typing {
+    font-size: 6vw;
+    font-family: 'Ubuntu'; /* Monospace font for even character width */
+    color: #d7b94c;
+    position: relative;
+    overflow: hidden; /* Ensure text is clipped during animation */
+  }
+  
+  .typing::after {
+    content: "|"; /* Caret character */
+    position: absolute;
+    right: 0; /* Align caret at the start of the text */
+    width: 100%; /* Start covering all text */
+    color: white; /* Caret color */
+    background: var(--background); /* Matches the background to hide text */
+    animation: typing 4s steps(var(--steps)) forwards, /* Typing effect */
+               caret 1s infinite; /* Blinking caret */
+  }
+  
+  @keyframes typing {
+    to { width: 0; } /* Shrink the covering pseudo-element */
+  }
+  
+  @keyframes caret {
+    50% { color: transparent; } /* Blinking caret effect */
+  }
+  
+  @font-face {
+    font-family:'Ubuntu';
+    src: url('../fonts/UbuntuMono-R.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
