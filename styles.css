@@ -90,22 +90,28 @@ height:5%;
 
 #banner {
     position:absolute;
-    width:100%;
-    height:100%;
+    width:auto;
+    height:80vh;
     z-index: 1;
     left:100%;
-    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 4.5s forwards;
+    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 4.5s forwards,
+               bopacity 1.5s 4.5s;
 }
 
 @keyframes slide {
   from {left: 100%;}
-  to {left: 0%;}
+  to {left: 68%;
+      bottom:0%;}
+}
+@keyframes bopacity {
+  from {opacity:0;}
+  to {opacity: 100;}
 }
 
 #nameheader {
     position:relative;
     z-index:3;
-    right: 27.5%;
+    right: 25%;
 }
 
 .small-spacer {
@@ -133,6 +139,9 @@ height:5%;
 
 /* END WELCOME SECTON */
 
+/* BEGIN ABOUT */
+
+/* END ABOUT */
 #intro {
     padding-bottom:10px;
 }
@@ -211,7 +220,7 @@ height:5%;
     width: 100%; /* Start covering all text */
     color: var(--ccol, white); /* Caret color */
     background: var(--background); /* Matches the background to hide text */
-    animation: typing var(--adur, 1s) steps(var(--steps)) forwards var(--delay, 0s), /* Typing effect */
+    animation: typing var(--adur, 0.7s) steps(var(--steps)) forwards var(--delay, 0s), /* Typing effect */
                caret 1s infinite;
   }
   
@@ -230,3 +239,8 @@ height:5%;
     font-weight:normal;
     font-style:normal;
   }
+
+  #contacts-section {
+    background-color:grey;
+    
+}
