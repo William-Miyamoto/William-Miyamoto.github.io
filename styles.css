@@ -22,11 +22,14 @@ height:5%;
 }
 
 .nav {
-    background-color:darkslategrey;
+    background-color:rgba(62, 62, 62, 0.7);
     width:100%;
-    position:fixed;
+    position:absolute;
+    z-index:4;
     border-bottom:5px solid rgba(0, 0, 0, 0.4);
     line-height:1.75;
+    top:-15vh;
+    animation: navanim 0.4s 4.7s forwards;
 }
 
 .nav ul {
@@ -34,7 +37,7 @@ height:5%;
     align-items:center;
     justify-content:center;
     list-style:none;
-    height:100%;
+    height:12vh;
     justify-content:flex-end;
    
 }
@@ -42,7 +45,7 @@ height:5%;
 .nav ul li {
     padding: 2vh 24px 2vh 24px;
     color:whitesmoke;
-    font-family:Helvetica, sans-serif;
+    font-family:"Ubuntu";
     font-size:20px;
     transition:background-color 0.6s ease;
     width:100%;
@@ -55,7 +58,12 @@ height:5%;
 }
 
 .nav ul li:hover {
-    background-color:rgb(29, 48, 48);
+    background-color:rgb(75, 75, 75);
+}
+
+@keyframes navanim {
+    from {top:-15vh;}
+    to {top:0;}
 }
 
 /* BEGIN WELCOME SECTON */
@@ -67,16 +75,16 @@ height:5%;
     justify-content:center;
     width:100%;
     height:100vh;
-    background-color:lightgrey;
+    background-color:var(--background);
 }
 
 #banner {
     position:absolute;
     width:100%;
-    height:75vh;
+    height:100%;
     z-index: 1;
     left:100%;
-    animation: slide 0.3s cubic-bezier(.61,.89,.68,.83) 4.5s forwards;
+    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 4.5s forwards;
 }
 
 @keyframes slide {
@@ -87,7 +95,7 @@ height:5%;
 #nameheader {
     position:relative;
     z-index:3;
-    right: 30%;
+    right: 27.5%;
 }
 
 .small-spacer {
@@ -175,7 +183,7 @@ height:5%;
 
 :root {
     --steps: 16; /* Match the exact number of characters */
-    --background: lightgrey; /* Match the section's background */
+    --background: white; /* Match the section's background */
   }
   
   .typing {
@@ -191,7 +199,7 @@ height:5%;
     position: absolute;
     right: 0; /* Align caret at the start of the text */
     width: 100%; /* Start covering all text */
-    color: var(--ccol, lightgrey); /* Caret color */
+    color: var(--ccol, white); /* Caret color */
     background: var(--background); /* Matches the background to hide text */
     animation: typing var(--adur, 1s) steps(var(--steps)) forwards var(--delay, 0s), /* Typing effect */
                caret 1s infinite var(--cdel, 0s);
