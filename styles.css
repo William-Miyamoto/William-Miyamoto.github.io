@@ -26,10 +26,18 @@ height:5%;
     width:100%;
     position:absolute;
     z-index:4;
+    padding-top:0;
+    padding-bottom:0;
+    transition: padding-bottom 0.3s, padding-top 0.3s;
     border-bottom:5px solid rgba(0, 0, 0, 0.4);
     line-height:1.75;
     top:-15vh;
     animation: navanim 0.4s 4.7s forwards;
+}
+
+.nav:hover {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .nav ul {
@@ -38,7 +46,7 @@ height:5%;
     justify-content:center;
     list-style:none;
     height:12vh;
-    justify-content:flex-end;
+    position:relative;
    
 }
 
@@ -60,6 +68,8 @@ height:5%;
 .nav ul li:hover {
     background-color:rgb(75, 75, 75);
 }
+
+
 
 @keyframes navanim {
     from {top:-15vh;}
