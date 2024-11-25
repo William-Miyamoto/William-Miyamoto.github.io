@@ -72,6 +72,11 @@ height:5%;
     
 }
 
+#nameheader {
+    position:relative;
+    right: 30%;
+}
+
 .small-spacer {
     height:2%;
 }
@@ -118,10 +123,6 @@ height:5%;
     width:50%;
     height:100%;
 }
-
-
-
-
 
 
 .buttons {
@@ -177,7 +178,7 @@ height:5%;
     position: absolute;
     right: 0; /* Align caret at the start of the text */
     width: 100%; /* Start covering all text */
-    color: var(--ccol, white); /* Caret color */
+    color: var(--ccol, lightgrey); /* Caret color */
     background: var(--background); /* Matches the background to hide text */
     animation: typing var(--adur, 1s) steps(var(--steps)) forwards var(--delay, 0s), /* Typing effect */
                caret 1s infinite var(--cdel, 0s);
