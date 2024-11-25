@@ -32,7 +32,7 @@ height:5%;
     border-bottom:5px solid rgba(0, 0, 0, 0.4);
     line-height:1.75;
     top:-15vh;
-    animation: navanim 0.4s 4.7s forwards;
+    animation: navanim 0.4s 2.75s forwards;
 }
 
 .nav:hover {
@@ -94,8 +94,8 @@ height:5%;
     height:80vh;
     z-index: 1;
     left:100%;
-    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 4.5s forwards,
-               bopacity 1.5s 4.5s;
+    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 2.75s forwards,
+               bopacity 1.5s 2.75s;
 }
 
 @keyframes slide {
