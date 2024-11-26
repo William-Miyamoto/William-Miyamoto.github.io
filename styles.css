@@ -92,16 +92,16 @@ height:5%;
     position:absolute;
     width:auto;
     height:80vh;
+    bottom:0;
     z-index: 1;
     left:100%;
-    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 2.75s forwards,
-               bopacity 1.5s 2.75s;
+    animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 2.75s forwards;
+               /* bopacity 1.5s 2.75s; */
 }
 
 @keyframes slide {
   from {left: 100%;}
-  to {left: 68%;
-      bottom:0%;}
+  to {left: 68%;}
 }
 @keyframes bopacity {
   from {opacity:0;}
@@ -139,9 +139,17 @@ height:5%;
 
 /* END WELCOME SECTON */
 
+/* BEGIN PROJECTS */
+#projects-section {
+    height:100vh;
+    background-color:beige;
+}
+/* END PROJECTS */
+
 /* BEGIN ABOUT */
 
 /* END ABOUT */
+
 #intro {
     padding-bottom:10px;
 }
