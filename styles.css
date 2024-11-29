@@ -152,6 +152,7 @@ height:5%;
     display:flex;
     flex-direction:column;
     align-items:center;
+    gap: 1px;
     /* margin-top:50px; */
     width:90vw;
     height: 95%;
