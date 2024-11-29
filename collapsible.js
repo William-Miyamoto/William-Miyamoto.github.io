@@ -9,11 +9,11 @@ for (i = 0; i < coll.length; i++) {
     if (content.style.maxHeight) {
       // Collapse
       content.style.maxHeight = null; 
-      content.style.padding = "0"; // Optional: Adjust padding when collapsed
+      content.classList.remove("visible");
     } else {
       // Expand
       content.style.maxHeight = (content.scrollHeight + 40) + "px"; // Dynamically set height
-      content.style.padding = "20px"; // Optional: Add padding during expansion
+      content.classList.add("visible");
     }
   });
 }
