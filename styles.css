@@ -299,40 +299,7 @@ height:5%;
 }
 
 
-.contactbuttons {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    
-}
 
-.contactbuttons img {
-    position:relative;
-    top:3px;
-    display:inline-block;
-    width:18px;
-    transition-delay:0s;
-}
-
-#email {
-    top:3px;
-}
-
-.contactbuttons a {
-    display:inline-block;
-    color:black;
-    font-size:15px;
-    transition:transform 0.3s ease-out;
-    transition-property:transform;
-    transition-duration:0.3s;
-    transition-timing-function:ease-out;
-    text-decoration:none;
-    padding: 0px 9px 0px 9px
-}
-
-.contactbuttons a:hover {
-    transform: translateY(-4px);
-}
 
 :root {
     --steps: 16; /* Match the exact number of characters */
@@ -399,6 +366,67 @@ height:5%;
   }
 
   #contacts-section {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
     background-color:grey;
+    height: 50vh;
+    width: auto;
+    
+    background-color:rgb(10, 10, 10);
+    padding-left: 8%;
+    padding-right: 10%;
+}
 
+
+.contact-header h1 {
+    font-family:'jbmono';
+    text-align:left;
+    font-size: clamp(4vh, 6vh, 6vh);
+    margin-bottom: 2%;
+    color:rgb(255, 236, 230);
+}
+
+.contact-header h3 {
+    font-family:'jbmono-i';
+    text-align:left;
+    font-size: clamp(1vh, 2vh, 2vh);
+    color:rgba(255, 236, 230, 0.171);
+}
+
+.contactbuttons {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    
+}
+
+.contactbuttons img {
+    position:relative;
+    top:0.3vh;
+    display:inline-block;
+    width:2.6vh;
+    transition-delay:0s;
+}
+
+#email {
+    top:3px;
+}
+
+.contactbuttons a {
+    display:inline-block;
+    font-family:'jbmono';
+    color:rgb(255, 255, 255);
+    font-size:2.6vh;
+    transition:transform 0.3s ease-out;
+    transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function:ease-out;
+    text-decoration:none;
+    padding: 0px 9px 0px 9px
+}
+
+.contactbuttons a:hover {
+    transform: translateY(-4px);
 }
