@@ -25,7 +25,7 @@ height:5%;
     background-color:rgba(122, 122, 122, 0.9);
     width:100%;
     position:absolute;
-    z-index:4;
+    z-index:12;
     padding-top:0;
     padding-bottom:0;
     transition: padding-bottom 0.3s, padding-top 0.3s;
@@ -93,7 +93,7 @@ height:5%;
     width:auto;
     height:80vh;
     bottom:0;
-    z-index: 1;
+    z-index: 4;
     left:100%;
     animation: slide 0.7s cubic-bezier(.19,.29,.22,.84) 2.75s forwards;
                /* bopacity 1.5s 2.75s; */
@@ -110,7 +110,7 @@ height:5%;
 
 #nameheader {
     position:relative;
-    z-index:3;
+    z-index:5;
     right: 25%;
 }
 
@@ -139,18 +139,56 @@ height:5%;
 
 /* END WELCOME SECTON */
 
-.welcome-proj-gradient {
+/* .welcome-proj-gradient {
     width: 100vw;
-    height: 20vh;
-}
+    height: 60vh;
+    background-image: linear-gradient(180deg, white, rgb(155, 155, 155))
+} */
 
 /* BEGIN PROJECTS */
+#proj-header {
+    padding: 10% 0 10% 0%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height: 20vh;
+    background-color:rgb(12, 12, 12);
+    gap: 11px;
+    text-align:center;
+}
+
+.inner-wrapper {
+    background-color: rgba(255, 255, 255, 0.021);
+    padding: 6.5% 27% 6.5% 27%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height: 20vh;
+    gap: 11px;
+    text-align:center;
+}
+
+#proj-header h1 {
+    font-family:'jbmono';
+    font-size: clamp(2vw, 5vw, 3rem);
+    color:rgb(255, 60, 0);
+}
+#proj-header h2 {
+    font-family:'jbmono-i';
+    color:rgba(255, 94, 45, 0.479);
+    font-size: clamp(1vw, 2vw, 1rem);
+}
+
 #projects-section {
     display:flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
     height:200vh;
-    background-color:beige;
+    background-color:rgb(12, 12, 12);
 }
 
 .listwidget {
@@ -159,9 +197,9 @@ height:5%;
     align-items:center;
     gap: 1px;
     /* margin-top:50px; */
-    width:90vw;
-    height: 95%;
-    background-color:rgba(0,0,0,0.2);
+    width:100vw;
+    height: 100%;
+    /* background-color:rgba(0,0,0,0.2); */
 }
 
 .projectbutton {
@@ -173,8 +211,8 @@ height:5%;
     color: white;
     border: 5px rgb(49, 49, 49) solid;
     width: 90%;
-    font-family: 'Ubuntu-Regular', Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: 'jbmono', Helvetica, sans-serif;
+    font-size: 20px;
     text-align: left;
     position: relative;  
     padding-left:4%;
@@ -204,7 +242,8 @@ height:5%;
     width: 90%;
     color: white;
     text-align: left;
-    font-family: 'Ubuntu-Regular';
+    font-family: 'jbmono';
+    font-size: 85%;
     background-color: rgba(0, 0, 0, 0.788);
 
 }
@@ -330,13 +369,31 @@ height:5%;
   
   @font-face {
     font-family:'Ubuntu';
-    src: url('../fonts/UbuntuMono-R.ttf') format('truetype');
+    src: url('../fonts/Ubuntu/UbuntuMono-R.ttf') format('truetype');
     font-weight:normal;
     font-style:normal;
   }
   @font-face {
     font-family:'Ubuntu-Regular';
-    src: url('./fonts/Ubuntu-L.ttf') format('truetype');
+    src: url('./fonts/Ubuntu/Ubuntu-L.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
+  @font-face {
+    font-family:'Monofur';
+    src: url('./fonts/monofur/monof55.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
+  @font-face {
+    font-family:'jbmono';
+    src: url('./fonts/jbmono/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
+  @font-face {
+    font-family:'jbmono-i';
+    src: url('./fonts/jbmono/JetBrainsMono-Italic.ttf') format('truetype');
     font-weight:normal;
     font-style:normal;
   }
