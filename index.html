@@ -9,13 +9,13 @@
     </head>
     <body>
         <main>
-                <nav id="navbar" class="nav">
+                <!-- <nav id="navbar" class="nav">
                 <ul>
                     <a href="#projects-section"><li class="navitem">Projects</li></a>
                     <a href="#about-section"><li class="navitem">About</li></a>
                     <a href="#contacts-section"><li class="navitem">Contact</li></a>
                 </ul>
-                </nav> 
+                </nav>  -->
                 <section id="welcome-banner-section">
                     <div class="welcome-banner">
                         <div id="nameheader">
@@ -29,7 +29,7 @@
                         <img id="banner" src="../img/profilephoto.png"></img>
                     </div>
                 </section>
-
+                <div class="welcome-proj-gradient"></div>
                 <section id="about-section">
                     <!-- haha there's nothing here yet... -->
                 </section>
@@ -37,7 +37,7 @@
                 <section id="projects-section">
                     <!-- look there's nothing here either! -->
                     <div class="listwidget">
-                        <button type="button" class="projectbutton"><p>Personal Website</p><img src="./img/htmlicon.png"></button></button>
+                        <button type="button" class="projectbutton"><p>Personal Website</p><div class="pbimgcontainer"><img src="./img/htmlicon.png"></div></button></button>
                         <div class="projectcontent" id="perswebsite">
                             <p>You're looking at it! This is a personal website coded in
                                 HTML/CSS to help you learn about me, my projects, skills,
@@ -48,16 +48,33 @@
                             </p>
                             <img src="./img/websiteimg.png">
                         </div>
-                        <button type="button" class="projectbutton"><p>Bash Shell Recreation</p><img src="./img/c-icon.png"></button></button>
-                        <div class="projectcontent" id="perswebsite">
-                            <p>You're looking at it! This is a personal website coded in
-                                HTML/CSS to help you learn about me, my projects, skills,
-                                and personality. It includes a large number of CSS animations and
-                                style rules, semantically complete HTML structure and some
-                                basic JavaScript functionality -- including the list this
-                                text is contained in!
+                        <button type="button" class="projectbutton"><p>Bash Shell Recreation</p><div class="pbimgcontainer"><img src="./img/linuxicon.png"><img src="./img/c-icon.png"></div></button>
+                        <div class="projectcontent" id="bshell">
+                            <p>
+                               A miniature shell program supporting several basic built-in operations,
+                               including exit, env, setenv, unsetenv, cd and history. It also supports indexing 
+                               of additional Linux executables through PATH, which will be passed from its caller. 
+                               The shell supports I/O redirection using symbols > and < for standard input and output. 
                             </p>
-                            <img src="./img/websiteimg.png">
+                            <img src="./img/linuxss.png">
+                        </div>
+                        <button type="button" class="projectbutton"><p>RAID 2 Encoder/Decoder</p><div class="pbimgcontainer"><img src="./img/c-icon.png"></div></button>
+                        <div class="projectcontent" id="raidenc">
+                            <p>
+                               This is a C program which emulates RAID 2 encoding/decoding by utilising several partfiles in place of independent
+                               disks. It supports command line flags including debugging, file input, and file size input. The program also
+                               supports 1 bit error detection and correction enabling the program to decode an array of partfiles even if one 
+                               is corrupted or deleted. 
+                            </p>
+                            <img src="">
+                        </div>
+                        <button type="button" class="projectbutton"><p>8 Puzzle Solver</p><div class="pbimgcontainer"><img src="./img/javaicon.png"></div></button>
+                        <div class="projectcontent" id="8puz">
+                            <p>
+                               A program which leverages the A* search algorithm to solve the 8-puzzle problem.
+                               Developed and compiled in Java. Uses algorithms from Princeton's  "Introduction to Programming".
+                            </p>
+                            <img src="/img/8puz.png">
                         </div>
                     </div>
                 </section>

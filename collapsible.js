@@ -10,10 +10,12 @@ for (i = 0; i < coll.length; i++) {
       // Collapse
       content.style.maxHeight = null; 
       content.classList.remove("visible");
+      content.style.padding = "0px";
     } else {
       // Expand
-      content.style.maxHeight = (content.scrollHeight + 40) + "px"; // Dynamically set height
+      content.style.maxHeight = (content.scrollHeight * 5) + "px"; // Dynamically set height
       content.classList.add("visible");
+      content.style.padding = "30px";
     }
   });
 }
