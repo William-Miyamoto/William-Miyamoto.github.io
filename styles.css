@@ -366,6 +366,7 @@ height:5%;
   }
 
   #contacts-section {
+    border-top:2px rgb(89, 89, 89) solid;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -373,7 +374,7 @@ height:5%;
     background-color:grey;
     height: 50vh;
     width: auto;
-    
+    gap:50px;
     background-color:rgb(10, 10, 10);
     padding-left: 8%;
     padding-right: 10%;
