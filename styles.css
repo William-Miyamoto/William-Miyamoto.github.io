@@ -1,20 +1,21 @@
 * {
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     /* font-family:Helvetica, sans-serif; */
 }
 
-*::before, *::after {
-    box-sizing:inherit;
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 body {
- overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 main {
@@ -22,14 +23,49 @@ main {
     flex-direction: column;
 }
 
+.navbar {
+    display:flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    border: 3px solid black;
+}
+
+#nav-buttons {
+    font-family: ksans;
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid blue;
+}
+
+#nav-buttons img {
+    width: 27%;
+    height: auto;
+}
+
+.nav-button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+#nav-contact-icons {
+    flex:1;
+    border: 3px solid green;
+}
+
+
 .home {
     /* border: 2px solid red; */
     /* display:flex;
     flex-direction: column;
     align-items: center; */
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #D9D9D9;
     width: 100vw;
     height: 100vh;
@@ -43,26 +79,27 @@ main {
     width: 90vw;
     /* margin-top: 20%; */
     justify-content: space-evenly;
-    animation: fadeIn 1.65s ease-out forwards; 
+    animation: fadeIn 1.65s ease-out forwards;
 }
 
-.intro, .portrait {
-    flex:1;
+.intro,
+.portrait {
+    flex: 1;
 }
 
 
 .intro {
     /* border: 2px solid blue; */
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center; 
+    justify-content: center;
 }
 
 .intro_name {
     font-family: ksansb;
     font-size: 3.5rem;
-    margin-right:auto;
+    margin-right: auto;
 }
 
 .intro_title {
@@ -76,21 +113,21 @@ main {
 }
 
 .resume_button {
-    margin-top:3%;
-    display:flex;
+    margin-top: 3%;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     padding: 1% 0 1% 0;
-    color:white;
-    font-size:24px;
+    color: white;
+    font-size: 24px;
     font-family: ksans;
     border-radius: 15px;
     flex-direction: row;
     background-color: #54C796;
     width: 243px;
     height: 65px;
-    white-space:nowrap;
+    white-space: nowrap;
     border: none;
 }
 
@@ -99,8 +136,8 @@ main {
 }
 
 .resume_button p {
-    position:relative;
-    top:3px;
+    position: relative;
+    top: 3px;
 }
 
 #dlicon_intro {
@@ -110,22 +147,24 @@ main {
 
 .portrait {
     /* border: 2px solid blue; */
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #portrait_wrapper {
-    width: 55vh;
+    /* width: 55vh;
     height: 55vh;
     border: 5px solid black;
     overflow: hidden;
-    position: relative;
+    position: relative; */
 }
 
 .portrait img {
-    flex-shrink: 0; /* Prevent shrinking */
-    flex-grow: 0;   /* Prevent growing */
+    flex-shrink: 0;
+    /* Prevent shrinking */
+    flex-grow: 0;
+    /* Prevent growing */
     width: 55vh;
     height: 55vh;
     border: 5px solid black;
@@ -137,28 +176,52 @@ main {
     justify-content: center; */
 }
 
+.bounce_arrow img {
+    position: fixed;
+    bottom: 10px;
+    /* Distance from the bottom */
+    left: 50%;
+    width: max(3vw, 5vh);
+    height: auto;
+    opacity: 0;
+    /* transform: translateX(-50%); */
+    animation: bounce 1.5s ease-in-out infinite 1s, fadeIn 1s ease-in-out 1.5s forwards;
+    /* Animation definition */
+}
+
 
 /* Fonts */
 
 
 @font-face {
-    font-family:'ksans';
+    font-family: 'ksans';
     src: url('../fonts/ksans/KumbhSans-Regular.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-  }
-  @font-face {
-    font-family:'ksansb';
-    src: url('../fonts/ksans/KumbhSans-Bold.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-  }
+    font-weight: normal;
+    font-style: normal;
+}
 
-  @keyframes fadeIn {
+@font-face {
+    font-family: 'ksansb';
+    src: url('../fonts/ksans/KumbhSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -20%);
     }
 }
