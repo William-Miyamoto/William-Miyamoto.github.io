@@ -4,34 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Miyamoto's Personal Website</title>
+
+    <title>William Miyamoto</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon.png" />
 </head>
 
 <body>
     <main>
-        <section class="home">
+        <!-- <section class="home" id="home">
             <nav class="navbar">
                 <div id="nav-buttons">
-                    <div class="nav-button-wrapper">
-                        <img src="../img/house.svg"></img>
-                        <p>Home</p>
-                    </div>
-                    <div class="nav-button-wrapper">
-                        <img src="../img/about.svg"></img>
-                        <p>About</p>
-                    </div>
-                    <div class="nav-button-wrapper">
-                        <img src="../img/projdiagram.svg"></img>
-                        <p>Projects</p>
-                    </div>
-                    <div class="nav-button-wrapper">
-                        <img src="../img/phone.svg"></img>
-                        <p>Contact</p>
-                    </div>
+                    <a href="#home">
+                        <div class="nav-button-wrapper">
+                            <img src="./img/house.svg"></img>
+                            <p>Home</p>
+                        </div>
+                    </a>
+                    <a href="#about">
+                        <div class="nav-button-wrapper">
+                            <img src="./img/about.svg"></img>
+                            <p>About</p>
+                        </div>
+                    </a>
+                    <a href="#projects">
+                        <div class="nav-button-wrapper">
+                            <img src="./img/projdiagram.svg"></img>
+                            <p>Projects</p>
+                        </div>
+                    </a>
+                    <a href="#contact">
+                        <div class="nav-button-wrapper">
+                            <img src="./img/phone.svg"></img>
+                            <p>Contact</p>
+                        </div>
+                    </a>
                 </div>
-                <div id="nav-contact-icons"></div>
+                <div id="nav-contact-icons">
+                    <a href="https://github.com/William-Miyamoto" target="_blank"><img src="./img/github.svg"></img></a>
+                    <a href="https://www.linkedin.com/in/william-miyamoto-8951241a7/" target="_blank"><img src="./img/linkedin.svg"></img></a>
+                    <a href="mailto:william.miyamoto001@gmail.com" target="_blank"><img src="./img/email.svg"></img></a>
+                    <a href="https://leetcode.com/u/wmiyamoto001/" target="_blank"><img src="./img/leetcode.svg"></img></a>
+                </div>
             </nav>
             <div id="welcome_wrapper">
                 <div class="intro">
@@ -39,12 +53,14 @@
                         <div class="intro_name">
                             <p>Hi, I'm <span id="first_name_intro">William</span>.</p>
                         </div>
-                        <p class="intro_title">Programmer   |   Problem Solver   |   Professional</p>
+                        <p class="intro_title">Programmer | Problem Solver | Professional</p>
                     </div>
-                    <button class="resume_button">
+                    <a target="_blank" href="./files/William_Miyamoto_Resume.pdf">
+                    <button class="resume_button" >
                         <p>My Resume</p>
                         <img id="dlicon_intro" src="../img/download-solid.svg">
                     </button>
+                </a>
                 </div>
                 <div class="portrait">
                     <div id="portrait_wrapper">
@@ -54,6 +70,68 @@
             </div>
             <div class="bounce_arrow">
                 <img src="../img/arrow-down.png"></img>
+            </div>
+        </section> -->
+        <section class="about" id="about">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div id="about-intro">
+                        <p>About Me</p>
+                        <div class="ab_divider"></div>
+                        <div id="about-para">
+                            <p>When Jane took over as CEO of a struggling manufacturing company, she knew drastic
+                                changes were needed. She implemented a 5-year plan that involved streamlining
+                                operations, investing in new technology, and expanding into emerging markets. The first
+                                year was tough, with layoffs and restructuring causing a 5% dip in profits. But by year
+                                three, the company had turned a corner. Profits were up 15%, and employee morale had
+                                soared. By year five, the company had doubled its revenue and become an industry leader.
+                                Jane's strategic vision and unwavering determination proved that long-term planning and
+                                perseverance can lead to remarkable turnarounds.</p>
+                        </div>
+                    </div>
+                    <div id="about-skills">
+                        <div id="skills-intro">
+                            <p>Skills</p>
+                            <div class="ab_divider_2"></div>
+                        </div>
+                        <div id="skills-grid">
+                            <div class="sk_grid_node">
+                                <img src="./img/sql.svg"></img>
+                                <p>SQL</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img src="./img/clang.svg"></img>
+                                <p>C / C#</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img src="./img/java.svg"></img>
+                                <p>Java</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img src="./img/python.svg"></img>
+                                <p>Python</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img></img>
+                                <p>SQL</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img></img>
+                                <p>SQL</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img></img>
+                                <p>SQL</p>
+                            </div>
+                            <div class="sk_grid_node">
+                                <img></img>
+                                <p>SQL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="about-gallery"></div>
             </div>
         </section>
 

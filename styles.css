@@ -10,6 +10,11 @@
     box-sizing: inherit;
 }
 
+:root {
+    --mintcol: #54BA8F;
+    --mintdark: #01A778;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,38 +28,70 @@ main {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar {
     display:flex;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: -100%;
     width: 100vw;
     height: 10vh;
-    border: 3px solid black;
+    margin-top: 1%;
+    animation: top-fall 2s ease-out 0.4s forwards;
+    /* border: 3px solid black; */
+}
+
+.navbar a {
+    transition:transform 0.3s ease-out;
+    transition-property:transform;
+    transition-duration:0.3s;
+    transition-timing-function:ease-out;
+}
+
+.navbar a:hover {
+    transform: translateY(4px);
 }
 
 #nav-buttons {
     font-family: ksans;
+    font-size: 1 rem;
     flex:1;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 #nav-buttons img {
-    width: 27%;
+    width: max(1.5vw, 3vh);
     height: auto;
+    
 }
 
 .nav-button-wrapper {
     display: flex;
-    align-items: center;
-    gap: 10%;
+    align-items: flex-end;
+    gap: 1rem;
+    line-height: 1;
 }
+
 
 #nav-contact-icons {
     flex:1;
-    border: 3px solid green;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 5%;
+    
+    /* border: 3px solid green; */
+}
+
+#nav-contact-icons img {
+    width: max(1.75vw, 3.5vh);
 }
 
 
@@ -77,6 +114,7 @@ main {
     font-family: ksans;
     display: flex;
     width: 90vw;
+    margin-top: 5%;
     /* margin-top: 20%; */
     justify-content: space-evenly;
     animation: fadeIn 1.65s ease-out forwards;
@@ -177,7 +215,7 @@ main {
 }
 
 .bounce_arrow img {
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     /* Distance from the bottom */
     left: 50%;
@@ -189,6 +227,93 @@ main {
     /* Animation definition */
 }
 
+
+.about {
+    background-color:#D9D9D9;
+    height:100vh;
+    width: 100vw;
+    font-family: ksans;
+}
+
+.about-wrapper {
+    display:flex;
+    border: 3px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about-content, .about-gallery {
+    flex: 1;
+    border: 3px solid blue;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+#about-intro {
+    font-family: ksans;
+    font-size: 2.5rem;
+    display: block;
+    margin: 2% 0 0 5%;
+}
+
+.ab_divider {
+    width: 40%;
+    min-width: 200px;
+    border: 2px solid var(--mintdark);
+}
+
+.ab_divider_2 {
+    width: 20%;
+    min-width: 100px;
+    border: 2px solid var(--mintdark);
+}
+
+#about-para {
+    position: relative;
+    margin: 3% 8% 15% 0%;
+    font-size: 0.75rem;
+}
+
+#about-skills {
+    font-size: 1.5rem;
+    border: 2px solid blue;
+    flex:1;
+    margin: 2% 0 0 5%;
+}
+
+#skills-intro {
+    font-size: 2rem;
+}
+
+#skills-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid purple;
+    width: 100%;
+    height: 100%;
+}
+
+.sk_grid_node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    font-size: 1.5rem;
+    border: 1px solid green;
+    height: 100%;
+    width: 100%;
+}
+
+.sk_grid_node img {
+    width: min(10vw, 7vh);
+    height: auto;
+}
 
 /* Fonts */
 
@@ -223,5 +348,14 @@ main {
     }
     50% {
         transform: translate(0, -20%);
+    }
+}
+
+@keyframes top-fall {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0;
     }
 }
