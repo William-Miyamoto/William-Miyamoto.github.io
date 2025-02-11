@@ -1,126 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>William Miyamoto's Personal Website</title>
-        <link rel="stylesheet" href="./styles.css"/>
-        <link rel="icon" type="image/x-icon" href="favicon.png"/>
-    </head>
-    <body>
-        <main>
-                <nav id="navbar" class="nav">
-                <ul>
-                    <a href="#proj-header"><li class="navitem">Projects</li></a>
-                    <a href="#about-section"><li class="navitem">About</li></a>
-                    <a href="#contacts-section"><li class="navitem">Contact</li></a>
-                </ul>
-                </nav> 
-                <section id="welcome-banner-section">
-                    <div class="welcome-banner">
-                        <div id="nameheader">
-                            <div id="temprow">
-                                <h4 class="typing" style="--steps:6; --adur:0.4s">Hello,</h4>
-                                <h4 class="typing" style="--steps:3; --delay: 0.9s; --adur:0.1s">I'm</h4>
-                            </div>
-                            <h1 id="pname" class="typing" style="--steps: 16; --delay: 1s">William Miyamoto</h1>
-                            <h5 class="typing" style="--steps:27; --delay: 4.3s; --adur:1s">(and welcome to my website)</h5>
-                        </div>
-                        <img id="banner" src="./img/profilephoto.png"></img>
-                    </div>
-                </section>
-                <div class="welcome-proj-gradient"></div>
-                <section id="about-section">
-                    <!-- haha there's nothing here yet... -->
-                </section>
-                <div id="proj-header">
-                    <!-- <div class="inner-wrapper"> -->
-                        <h1>Projects</h1>
-                        <h2>Look at all the cool stuff I've done!</h2>
-                    <!-- </div> -->
-                </div>    
-                <section id="projects-section">
-                    <div class="listwidget">
-                        <button type="button" class="projectbutton"><p>Personal Website</p><div class="pbimgcontainer"><img src="./img/gitico.png"><img src="./img/htmlicon.png"></div></button></button>
-                        <div class="projectcontent" id="perswebsite">
-                            <p>You're looking at it! This is a personal website coded in
-                                HTML/CSS to help you learn about me, my projects, skills,
-                                and personality. It includes a large number of CSS animations and
-                                style rules, semantically complete HTML structure and some
-                                basic JavaScript functionality -- including the list this
-                                text is contained in! Version control was accomplished using 
-                                Git CLI as well. 
-                            </p>
-                            <img src="./img/websiteimg.png">
-                        </div>
-                        <button type="button" class="projectbutton"><p>Bash Shell Recreation</p><div class="pbimgcontainer"><img src="./img/linuxicon.png"><img src="./img/c-icon.png"></div></button>
-                        <div class="projectcontent" id="bshell">
-                            <p>
-                               A miniature shell program supporting several basic built-in operations,
-                               including exit, env, setenv, unsetenv, cd and history. It also supports indexing 
-                               of additional Linux executables through PATH, which will be passed from its caller. 
-                               The shell supports I/O redirection using symbols > and < for standard input and output. 
-                            </p>
-                            <img src="./img/linuxss.png">
-                        </div>
-                        <button type="button" class="projectbutton"><p>RAID 2 Encoder/Decoder</p><div class="pbimgcontainer"><img src="./img/c-icon.png"></div></button>
-                        <div class="projectcontent" id="raidenc">
-                            <p>
-                               This is a C program which emulates RAID 2 encoding/decoding by utilising several partfiles in place of independent
-                               disks. It supports command line flags including debugging, file input, and file size input. The program also
-                               supports 1 bit error detection and correction enabling the program to decode an array of partfiles even if one 
-                               is corrupted or deleted. 
-                            </p>
-                            <img src="img/raid2.png">
-                        </div>
-                        <button type="button" class="projectbutton"><p>8 Puzzle Solver</p><div class="pbimgcontainer"><img src="./img/javaicon.png"></div></button>
-                        <div class="projectcontent" id="8puz">
-                            <p>
-                               A program which leverages the A* search algorithm to solve the 8-puzzle problem.
-                               Developed and compiled in Java. Uses algorithms from Princeton's  "Introduction to Programming".
-                            </p>
-                            <img src="/img/8puz.png">
-                        </div>
-                        <button type="button" class="projectbutton"><p>Autocomplete Engine</p><div class="pbimgcontainer"><img src="./img/javaicon.png"></div></button>
-                        <div class="projectcontent" id="autocompl">
-                            <p>
-                               A program which utilises a Binary Search Tree to sort and index a given dictionary, 
-                               find a set of strings that begins with a given prefix (the current search input), 
-                               and sort the results by descending weight; i.e. those in closest lexicographic proximity
-                               to the currently typed string. 
-                               Developed and compiled in Java. Uses algorithms from Princeton's  "Introduction to Programming".
-                            </p>
-                            <img src="/img/autocompl.png">
-                        </div>
-                    </div>
-                </section>
 
-                <section id="contacts-section">
-                    <div class="contact-header">
-                        <h1>Let's keep in touch!</h1>
-                        <h3>My people will be in touch with your people...</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Miyamoto's Personal Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+
+<body>
+    <main>
+        <section class="home">
+            <nav></nav>
+            <div id="welcome_wrapper">
+                <div class="intro">
+                    <div id="introtext">
+                        <div class="intro_name">
+                            <p>Hi, I'm <span id="first_name_intro">William</span>.</p>
+                        </div>
+                        <p class="intro_title">Programmer   |   Problem Solver   |   Professional</p>
                     </div>
-                    <div class="contactbuttons">
-                        <a href="https://www.linkedin.com/in/william-miyamoto-8951241a7/" class="contact-button" target="_blank">
-                            <img src="ln.png">
-                            LinkedIn
-                        </a>
-                        <a class="contact-button" href="https://github.com/William-Miyamoto" target="_blank">
-                            <img src="github.png">
-                            GitHub
-                        </a>
-                        <a class="contact-button" href="mailto:william.miyamoto001@umb.edu" target="_blank" >
-                            <img id="email" src="email.png">
-                            E-mail
-                        </a>
-                        <a class="contact-button" href="https://leetcode.com/wmiyamoto001/" target="_blank">
-                            <img src="leetcode.png">
-                            LeetCode
-                        </a>
+                    <button class="resume_button">
+                        <p>My Resume</p>
+                        <img id="dlicon_intro" src="../img/download-solid.svg">
+                    </button>
+                </div>
+                <div class="portrait">
+                    <div id="#portrait_wrapper">
+                        <img src="../img/FISHINGPHOTO.jpg"></img>
                     </div>
-                </section>
-        </main>
-        <script src="collapsible.js"></script>
-    </body>
-    <footer></footer>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <script src="collapsible.js"></script>
+</body>
+<footer></footer>
+
 </html>
