@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Looking under the hood, are we...? -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +34,7 @@
                             <p>Projects</p>
                         </div>
                     </a>
-                    <a href="#contact">
+                    <a href="#contacts">
                         <div class="nav-button-wrapper">
                             <img src="./img/phone.svg"></img>
                             <p>Contact</p>
@@ -41,9 +43,11 @@
                 </div>
                 <div id="nav-contact-icons">
                     <a href="https://github.com/William-Miyamoto" target="_blank"><img src="./img/github.svg"></img></a>
-                    <a href="https://www.linkedin.com/in/william-miyamoto-8951241a7/" target="_blank"><img src="./img/linkedin.svg"></img></a>
+                    <a href="https://www.linkedin.com/in/william-miyamoto-8951241a7/" target="_blank"><img
+                            src="./img/linkedin.svg"></img></a>
                     <a href="mailto:william.miyamoto001@gmail.com" target="_blank"><img src="./img/email.svg"></img></a>
-                    <a href="https://leetcode.com/u/wmiyamoto001/" target="_blank"><img src="./img/leetcode.svg"></img></a>
+                    <a href="https://leetcode.com/u/wmiyamoto001/" target="_blank"><img
+                            src="./img/leetcode.svg"></img></a>
                 </div>
             </nav>
             <div id="welcome_wrapper">
@@ -55,11 +59,11 @@
                         <p class="intro_title">Programmer | Problem Solver | Professional</p>
                     </div>
                     <a target="_blank" href="./files/William_Miyamoto_Resume.pdf">
-                    <button class="resume_button" >
-                        <p>My Resume</p>
-                        <img id="dlicon_intro" src="../img/download-solid.svg">
-                    </button>
-                </a>
+                        <button class="resume_button">
+                            <p>My Resume</p>
+                            <img id="dlicon_intro" src="../img/download-solid.svg">
+                        </button>
+                    </a>
                 </div>
                 <div class="portrait">
                     <div id="portrait_wrapper">
@@ -89,46 +93,47 @@
                                 perseverance can lead to remarkable turnarounds.</p>
                         </div>
                     </div>
-                    <div id="about-skills">
+                    <!-- <div id="about-skills">
                         <div id="skills-intro">
                             <p>Skills</p>
                             <div class="ab_divider_2"></div>
                         </div>
                         <div id="skills-grid">
                             <div class="sk_grid_node">
-                                <img src="./img/sql.svg"></img>
+                                <img class="svg sk_grid_svg" src="./img/sql.svg"></img>
                                 <p>SQL</p>
                             </div>
                             <div class="sk_grid_node">
-                                <img src="./img/clang.svg"></img>
+                                <img class="svg sk_grid_svg" src="./img/clang.svg"></img>
                                 <p>C / C#</p>
                             </div>
                             <div class="sk_grid_node">
-                                <img src="./img/java.svg"></img>
+                                <img class="svg sk_grid_svg" src="./img/java.svg"></img>
                                 <p>Java</p>
                             </div>
                             <div class="sk_grid_node">
-                                <img src="./img/python.svg"></img>
+                                <img class="svg sk_grid_svg" src="./img/python.svg"></img>
                                 <p>Python</p>
                             </div>
-                            <div class="sk_grid_node">
-                                <img></img>
-                                <p>SQL</p>
+
+                            <div class="sk_grid_node" style="font-size: min(5vw, 3vh)">
+                                <img class="svg sk_grid_svg" src="./img/html-icon.svg"></img>
+                                <p>HTML / CSS</p>
                             </div>
                             <div class="sk_grid_node">
-                                <img></img>
-                                <p>SQL</p>
+                                <img class="svg sk_grid_svg" src="./img/linux.svg"></img>
+                                <p>Linux</p>
                             </div>
                             <div class="sk_grid_node">
-                                <img></img>
-                                <p>SQL</p>
+                                <img class="svg sk_grid_svg" src="./img/git.svg"></img>
+                                <p>Git</p>
                             </div>
-                            <div class="sk_grid_node">
-                                <img></img>
-                                <p>SQL</p>
+                            <div class="sk_grid_node" style="font-size: min(5vw, 2.5vh)">
+                                <img class="svg sk_grid_svg"  src="./img/microsoft-logo.svg"></img>
+                                <p>Microsoft Office</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="about-gallery">
                     <div class="corner-border top-left animOnScr"></div>
@@ -142,10 +147,30 @@
             </div>
         </section>
         <div class="pagedivider"></div>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="proj-sect-wrapper">
                 <div class="project-widget">
-                    <div class="proj-node"></div>
+                    <div class="proj-node">
+                        <p>Bash Shell Recreation</p>
+                        <!-- <div class="pnode-icons">
+                            <img src="./img/clang.svg"></img>
+                            <img src="./img/java.svg"></img>
+                        </div> -->
+                    </div>
+                    <div class="pnode-content">
+                        <div class="pnode-inner">
+                            <p>A miniature shell program supporting several basic built-in operations, including exit,
+                                env, setenv, unsetenv, cd and history. It also supports indexing of additional Linux
+                                executables through PATH, which will be passed from its caller. The shell supports I/O
+                                redirection using symbols > and < for standard input and output. Found on my Github.
+                                    </p>
+
+                        </div>
+
+                        <img class="pnode-image"></img>
+
+
+                    </div>
                     <div class="proj-node"></div>
                     <div class="proj-node"></div>
                     <div class="proj-node"></div>
@@ -155,19 +180,54 @@
                     <div class="proj-node"></div>
                     <div class="proj-node"></div>
                 </div>
-                <div class="project-about">
+                <div class="project-about animOnScr">
                     <p id="project_abt_header">Projects</p>
                     <div class="ab_divider" style="margin:0 auto; margin-top: 5px;"></div>
                     <p id="project_abt_content">
-                        When Jane took over as CEO of a struggling manufacturing company, she  knew drastic changes were needed. She implemented a 5-year plan that  involved streamlining operations, investing in new technology, and  expanding into emerging markets. The first year was tough, with layoffs  and restructuring causing a 5% dip in profits. But by year three, the  company had turned a corner. Profits were up 15%, and employee morale  had soared. By year five, the company had doubled its revenue and become an industry leader. Jane's strategic vision and unwavering  determination proved that long-term planning and perseverance can lead  to remarkable turnarounds.When Jane took over as CEO of a struggling manufacturing company, she  knew drastic changes were needed. She implemented a 5-year plan that  involved streamlining operations, investing in new technology, and  expanding into emerging markets. The first year was tough, with layoffs  and restructuring causing a 5% dip in profits. 
+                        When Jane took over as CEO of a struggling manufacturing company, she knew drastic changes were
+                        needed. She implemented a 5-year plan that involved streamlining operations, investing in new
+                        technology, and expanding into emerging markets. The first year was tough, with layoffs and
+                        restructuring causing a 5% dip in profits. But by year three, the company had turned a corner.
+                        Profits were up 15%, and employee morale had soared. By year five, the company had doubled its
+                        revenue and become an industry leader. Jane's strategic vision and unwavering determination
+                        proved that long-term planning and perseverance can lead to remarkable turnarounds.When Jane
+                        took over as CEO of a struggling manufacturing company, she knew drastic changes were needed.
+                        She implemented a 5-year plan that involved streamlining operations, investing in new
+                        technology, and expanding into emerging markets. The first year was tough, with layoffs and
+                        restructuring causing a 5% dip in profits.
                     </p>
-                    
                 </div>
             </div>
         </section>
+        <div class="trans-div-1-1"></div>
+        <div class="trans-div-1"></div>
+        <div class="trans-div-2"></div>
+        <div class="trans-div-3"></div>
+        <div class="trans-div-4"></div>
+        <div class="trans-div-5"></div>
+        <div class="trans-div-6"></div>
+        <section class="contacts" id="contacts">
+            <div class="contact-wrapper">
+                <div class="contact-content" ></div>
+                <div class="contact-trademark" ></div>
+                <div class="contact-tm-divider"></div>
+            </div>
+        </section>
     </main>
+
+    <!-- Behold: javascript(s) -->
+     
     <script src="collapsible.js"></script>
     <script src="./scrollinview.js"></script>
+    <script src="inlineSVG.min.js"></script>
+    <script>
+        inlineSVG.init({
+            svgSelector: 'img.svg', // the class attached to all images that should be inlined
+            initClass: 'js-inlinesvg', // class added to <html>
+        }, function () {
+            console.log('All SVGs inlined');
+        });
+    </script>
 </body>
 <footer></footer>
 

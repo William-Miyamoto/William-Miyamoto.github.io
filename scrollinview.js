@@ -1,32 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const aboutGallery = document.querySelector(".about-gallery"); // Change selector as needed
+    const aboutGallery = document.querySelector(".about-gallery"); 
     const elementsToAnimate = document.querySelectorAll(".animOnScr");
-    const projNodes = document.querySelectorAll(".proj-node");
+    const projWidget = document.querySelector(".project-widget"); 
+    const projNodes = document.querySelectorAll(".proj-node"); 
 
-    // Function to add animations with delays for proj-node elements
-    const addProjectAnimation = (entry, index) => {
-        setTimeout(() => {
-            entry.target.classList.add("animate");
-        }, index * 200); // Adjust delay as needed for staggered effect
+    const addProjectAnimations = () => {
+        projNodes.forEach((node, index) => {
+            setTimeout(() => {
+                node.classList.add("animate");
+            }, index * 175); 
+        });
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry, index) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.classList.contains('proj-node')) {
-                    // Apply staggered animation to proj-node elements
-                    addProjectAnimation(entry, index);
+                if (entry.target === projWidget) {
+                    addProjectAnimations();
                 } else {
-                    // Animate other elements in a group (like about-gallery elements)
                     entry.target.classList.add("animate");
                 }
                 
-                observer.unobserve(entry.target); // Stop observing after triggering
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.35 }); // Adjust threshold as needed
-
-    // Observing the elements
+    }, { threshold: 0.35 }); 
     elementsToAnimate.forEach(el => observer.observe(el));
-    projNodes.forEach(node => observer.observe(node));
+    observer.observe(projWidget);
 });
