@@ -83,8 +83,14 @@
         <section class="about" id="about">
             <div class="about-wrapper animOnScr">
                 <div class="about-content">
+                    <div id="dgrid-abt-wrapper-top">
+                        <img class="svg dgrid-abt" src="./img/dotgrid.svg" />
+                    </div>
+                    <div id="dgrid-abt-wrapper-bottom">
+                        <img class="svg dgrid-abt" src="./img/dotgrid.svg" />
+                    </div>
                     <div id="about-intro">
-                        <p>About Me</p>
+                        <p id="aboutme">About Me</p>
                         <div class="ab_divider"></div>
                         <div id="about-para">
                             <p>When Jane took over as CEO of a struggling manufacturing company, she knew drastic
@@ -141,11 +147,20 @@
                 </div>
                 <div class="about-gallery">
                     <div class="corner-border top-left animOnScr"></div>
-                    <img class="aboutme-img animOnScr" id="abimg1"></img>
-                    <img class="aboutme-img animOnScr" id="abimg2"></img>
-                    <img class="aboutme-img animOnScr" id="abimg3"></img>
-                    <img class="aboutme-img animOnScr" id="abimg4"></img>
-                    <img class="aboutme-img animOnScr" id="abimg-main"></img>
+                    <div class="ab-gal-wrapper">
+                        <div class="ab-gal-scroll-widget">
+                            <div class="ab-img-wrap"><img src="./img/aboutme_gallery/5.jpg"
+                                    class="aboutme-img animOnScr" id="abimg-main"></img></div>
+                            <div class="ab-img-wrap"><img src="./img/aboutme_gallery/1.jpg"
+                                    class="aboutme-img animOnScr" id="abimg1"></img></div>
+                            <div class="ab-img-wrap"><img src="./img/aboutme_gallery/2.jpg"
+                                    class="aboutme-img animOnScr" id="abimg2"></img></div>
+                            <div class="ab-img-wrap"><img src="./img/aboutme_gallery/3.jpg"
+                                    class="aboutme-img animOnScr" id="abimg3"></img></div>
+                            <div class="ab-img-wrap"><img src="./img/aboutme_gallery/4.jpg"
+                                    class="aboutme-img animOnScr" id="abimg4"></img></div>
+                        </div>
+                    </div>
                     <div class="corner-border bottom-right animOnScr"></div>
                 </div>
             </div>
@@ -156,10 +171,6 @@
                 <div class="project-widget">
                     <div class="proj-node">
                         <p>Bash Shell Recreation</p>
-                        <!-- <div class="pnode-icons">
-                            <img src="./img/clang.svg"></img>
-                            <img src="./img/java.svg"></img>
-                        </div> -->
                     </div>
                     <div class="pnode-content">
                         <div class="pnode-inner">
@@ -168,23 +179,71 @@
                                 executables through PATH, which will be passed from its caller. The shell supports I/O
                                 redirection using symbols > and < for standard input and output. Found on my Github.
                                     </p>
-
                         </div>
-
-                        <img class="pnode-image"></img>
-
-
+                        <div class="p-img-wrp">
+                            <img src='./img/linuxss.png' class="pnode-image"/>
+                        </div>
                     </div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
-                    <div class="proj-node"></div>
+
+                    <div class="proj-node">
+                        <p>RAID 2 Encoder/Decoder</p>
+                    </div>
+                    <div class="pnode-content">
+                        <div class="pnode-inner">
+                            <p>A miniature shell program supporting several basic built-in operations, including exit,
+                                env, setenv, unsetenv, cd and history. It also supports indexing of additional Linux
+                                executables through PATH, which will be passed from its caller. The shell supports I/O
+                                redirection using symbols > and < for standard input and output. Found on my Github.
+                                    </p>
+                        </div>
+                        <div class="p-img-wrp">
+                            <img src='./img/raid2.png' class="pnode-image"/>
+                        </div>
+                    </div>
+                    <div class="proj-node">
+                        <p>Personal Website</p>
+                    </div>
+                    <div class="pnode-content">
+                        <div class="pnode-inner">
+                            <p>A miniature shell program supporting several basic built-in operations, including exit,
+                                env, setenv, unsetenv, cd and history. It also supports indexing of additional Linux
+                                executables through PATH, which will be passed from its caller. The shell supports I/O
+                                redirection using symbols > and < for standard input and output. Found on my Github.
+                                    </p>
+                        </div>
+                    </div>
+                    <div class="proj-node">
+                        <p>Autocomplete Engine</p>
+                    </div>
+                    <div class="pnode-content">
+                        <div class="pnode-inner">
+                            <p>A miniature shell program supporting several basic built-in operations, including exit,
+                                env, setenv, unsetenv, cd and history. It also supports indexing of additional Linux
+                                executables through PATH, which will be passed from its caller. The shell supports I/O
+                                redirection using symbols > and < for standard input and output. Found on my Github.
+                                    </p>
+                        </div>
+                    </div>
+                    <div class="proj-node">
+                        <p>8 Puzzle Solver</p>
+                    </div>
+                    <div class="pnode-content">
+                        <div class="pnode-inner">
+                            <p>A miniature shell program supporting several basic built-in operations, including exit,
+                                env, setenv, unsetenv, cd and history. It also supports indexing of additional Linux
+                                executables through PATH, which will be passed from its caller. The shell supports I/O
+                                redirection using symbols > and < for standard input and output. Found on my Github.
+                                    </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="project-about animOnScr">
+                    <div id="dgrid-proj-wrapper-top">
+                        <img class="svg dgrid-abt" src="./img/dotgrid.svg" />
+                    </div>
+                    <div id="dgrid-proj-wrapper-bottom">
+                        <img class="svg dgrid-abt" src="./img/dotgrid.svg" />
+                    </div>
                     <p id="project_abt_header">Projects</p>
                     <div class="ab_divider" style="margin:0 auto; margin-top: 5px;"></div>
                     <p id="project_abt_content">
@@ -217,11 +276,11 @@
         <section class="contacts" id="contacts">
             <div class="contact-wrapper">
                 <div class="contact-content">
-                    <div class ="animOnScr" id="contact-banner">
-                        <span id="contact-banner-head">Let's keep in touch!</span>
+                    <div class="animOnScr" id="contact-banner">
+                        <span id="contact-banner-head">Let's stay connected!</span>
                         <span id="contact-banner-body">My people will be in touch with your people...</span>
                     </div>
-                    <div class ="animOnScr" id="contact-btns">
+                    <div class="animOnScr" id="contact-btns">
                         <a target="_blank" href="https://github.com/William-Miyamoto" class="ctc-anch">
                             <img class="svg ctc-svg" src="./img/github.svg" />
                             <p>GitHub</p>

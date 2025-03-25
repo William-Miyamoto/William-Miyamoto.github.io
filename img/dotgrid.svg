@@ -6,13 +6,14 @@
 	<g>
 		<defs>
 			<rect id="SVGID_1_" x="0" width="288.001" height="288"/>
-			<mask id="fadeMask">
-    			<linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
-        			<stop offset="0%" style="stop-color: white; stop-opacity: 1" />
-        			<stop offset="100%" style="stop-color: black; stop-opacity: 0" />
-    			</linearGradient>
-    		<rect width="100%" height="100%" fill="url(#grad2)" />
-		</mask>
+			<linearGradient id="fadeGrad" y2="1" x2="0">
+      		<stop offset="0.5" stop-color="white" stop-opacity="0"/>
+     		 <stop offset="1" stop-color="white" stop-opacity=".5"/>
+    		</linearGradient>
+
+    		<mask id="fade" maskContentUnits="objectBoundingBox">
+      		<rect width="1" height="1" fill="url(#fadeGrad)"/>
+   			 </mask>
 		</defs>
 		<!-- <use xlink:href="#SVGID_1_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;"/> -->
 		<clipPath id="SVGID_00000057109437870294048810000001552927902666106760_">
