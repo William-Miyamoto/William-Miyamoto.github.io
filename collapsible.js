@@ -1,21 +1,17 @@
-var coll = document.getElementsByClassName("projectbutton");
+var coll = document.getElementsByClassName("proj-node");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    var pElement = content.querySelector("p");
-    if (content.style.maxHeight) {
-      // Collapse
-      content.style.maxHeight = null; 
+    var content = this.nextElementSibling; // Get the .pnode-content inside the clicked proj-node
+
+    if (content.classList.contains("visible")) {
+      // Collapse the content
       content.classList.remove("visible");
-      content.style.padding = "0px";
     } else {
-      // Expand
-      content.style.maxHeight = (pElement.scrollHeight * 4) + "px"; // Dynamically set height
+      // Expand the content
       content.classList.add("visible");
-      content.style.padding = "30px";
     }
   });
 }
