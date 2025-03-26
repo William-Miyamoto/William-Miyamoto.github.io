@@ -354,6 +354,7 @@ BEGIN ABOUT SECTION
 .about-wrapper {
     opacity: 0;
     display: flex;
+    
     /* border: 3px solid red; */
     width: 100vw;
     height: 100vh;
@@ -639,6 +640,44 @@ BEGIN ABOUT SECTION
     /* flex-shrink: 0; */
     /* flex: 1; */
 }
+
+/* 
+
+MOBILE COMPATABILITY RULES FOR ABOUT SECTION
+
+*/
+
+@media (max-width: 768px) {
+
+.about {
+    display:flex;
+    height: 180vh;
+}
+
+.about-wrapper {
+    flex-direction: column;
+    height: 200vh;
+}
+
+.ab-gal-scroll-widget, .ab-img-wrap {
+    width: 50vw;
+}
+
+
+#dgrid-abt-wrapper-top, #dgrid-abt-wrapper-bottom {
+    display: none;
+}
+
+#about-intro {
+    align-items: center;
+    text-align: center;
+}
+
+.ab_divider {
+    margin-bottom: 1vh;
+}
+
+}
 /* 
 #abimg1 {
     opacity: 0;
@@ -692,6 +731,7 @@ BEGIN ABOUT SECTION
 
 .proj-sect-wrapper {
     display: flex;
+    
     width: 100vw;
     height: 100vh;
     background-color: #D9D9D9;
@@ -858,7 +898,47 @@ BEGIN ABOUT SECTION
     text-align: center;
 }
 
-/* Contacts section */
+@media (max-width: 768px) {
+
+    .proj-sect-wrapper { 
+        flex-direction: column;
+    }
+
+    .project-about {
+        order: 1;
+    }
+
+    .project-widget {
+        order: 2;
+    }
+
+    #dgrid-proj-wrapper-top, #dgrid-proj-wrapper-bottom  {
+        display: none;
+    }
+    
+    .proj-node {
+        /* margin-left: 4%; */
+        padding: 5vh 5vw;
+        font-size: 3.5vh;
+    }
+
+    .project-widget {
+        /* padding: 5% 0 5% 0; */
+        margin: 5% 0 5% 0;
+        flex: 2;
+    }
+
+}
+
+
+
+/* 
+
+
+Contacts section 
+
+
+*/
 
 .trans-div-1-1 {
     width: 100vw;
@@ -920,9 +1000,8 @@ BEGIN ABOUT SECTION
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .contact-content {
@@ -1037,6 +1116,54 @@ BEGIN ABOUT SECTION
     /* border: 2px solid #9CBDB4; */
     top: 77.5vh;
 }
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        flex: 1;
+        
+    }
+
+    #contact-banner {
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5vh;
+    }
+
+    #contact-banner-head {
+        text-align: center;
+        font-size: min(7vw, 10vh);
+        
+    }
+    
+    #contact-banner-body {
+        text-align: center;
+        font-size: min(2.5vw, 5vh);
+        
+    }
+
+    #contact-btns {
+        /* justify-content: flex-start; */
+        padding: 0;
+        width: 60vw;
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    #contact-btns a {
+        text-wrap: nowrap;
+        font-size: 3.5vw;
+    }
+
+    .contact-trademark {
+        font-size: 2.5vw;
+        /* display: none; */
+    }
+}
+
 
 /* Fonts */
 
